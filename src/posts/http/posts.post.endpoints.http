@@ -1,0 +1,21 @@
+{{
+    //pre request scripts
+    const date = new Date();
+    exports.postDate = date.toISOString();
+}}
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiaGFwcHlzbGFwQHRlc3RtYWlsLmNvbSIsImlhdCI6MTc3MDI0Mzk2MiwiZXhwIjoxNzcwMjQ3NTYyLCJhdWQiOiJsb2NhbGhvc3Q6MzAwMCIsImlzcyI6ImxvY2FsaG9zdDozMDAwIn0.GLVd08Ut3LeshhL6OuutJZwRH48BIU-m-I03yiNhAFY
+{
+    "title": "Que coolaso",
+    "postType": "post",
+    "slug": "ay-mommy-3",
+    "status": "draft",
+    "content": "test content here",
+    "schema": "{\"@context\": \"https://schema.org\", \"@type\": \"Person\"}",
+    "featuredImageUrl": "http://localhost.com/images/image1.jpg",
+    "publishedOn": "{{postDate}}",
+    "metaOptions": { "metaValue": "{\"sidebarEnabled\": true, \"footerActive\": true}" },
+    "tags": []
+} 

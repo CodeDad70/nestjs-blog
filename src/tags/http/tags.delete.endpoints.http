@@ -1,0 +1,8 @@
+DELETE http://localhost:3000/tags/
+?id=2
+
+// Soft delete - adds a deleted at date but doesn't delete row or join tables association - 
+// used when you want to stop users from having access too a specific tag - but allows users that
+// have already created a post with that tag to still see it 
+DELETE http://localhost:3000/tags/soft-delete
+?id=3

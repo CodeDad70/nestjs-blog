@@ -1,0 +1,34 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName": "Test",
+    "lastName": "Interceptor",
+    "email": "lintyinty@testmail.com",
+    "password": "securePassword123"
+}
+
+
+POST http://localhost:3000/users/create-many
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIzLCJlbWFpbCI6ImpvaG5kb2VAdGVzdG1haWwuY29tIiwiaWF0IjoxNzcwMDY3NjM2LCJleHAiOjE3NzAwNzEyMzYsImF1ZCI6ImxvY2FsaG9zdDozMDAwIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.3C0OBhbU02ezM_1-4iC4JJ53sf-5QRSjRXtd-PMfzfI
+{
+    "users":
+        [
+            {
+                "firstName": "joejoe",
+                "lastName": "Doe",
+                "email": "joejoe@testmail.com",
+                "password": "securePassword123"
+            },
+            {
+                "firstName": "Tom,",
+                "lastName": "Doe",
+                "email": "tomdoe@testmail.com",
+                "password": "securePassword123"
+            }
+        ]
+}
+
+
+ 

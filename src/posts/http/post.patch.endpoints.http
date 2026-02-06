@@ -1,0 +1,8 @@
+PATCH http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "id": 9,
+    "title": "Title patch test baby",
+    "tags": [1, 3]
+}
